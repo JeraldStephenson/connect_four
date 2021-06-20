@@ -1,6 +1,7 @@
 # Connect Four Project
-authors: Jerald Stephenson, Benjamin Peto
 **Version 1.0.0**
+authors: Jerald Stephenson, Benjamin Peto
+
 
 
 
