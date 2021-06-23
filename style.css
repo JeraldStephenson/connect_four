@@ -1,0 +1,42 @@
+/***** Resetting default styling *****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***** FOOTER *****/
+footer{
+    background-color: cadetblue; /* the color only for visibility */
+    padding: 3rem 1rem 0.5rem 1rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+    
+}
+.dev-name{
+    padding: 1rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+}
+.copyright{
+    text-align: center;
+}
+/***** index.html *****/
+
+
+
+/***** game.html *****/
+
+
+
+/***** result.html *****/
+.result-container{
+    height: 100vh;
+}
