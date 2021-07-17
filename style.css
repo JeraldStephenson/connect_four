@@ -1,12 +1,41 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Nerko+One&display=swap');
+/*
+   DEFAULT font-family: 'Montserrat', sans-serif;
+   HEADING font-family: 'Nerko One', cursive; 
+
+   feel free to change, if you don't like them
+*/
+
+/* VARIABLES */
+:root{
+    /* colors */
+    --c-yellow: #FFC745;
+    --c-red: #FA6D61;
+    --c-darkgreen: #007A78;
+    --c-white: #F4F4F4;
+    --c-blue: #36B8CC;
+    --c-lightgreen: #009D78;
+
+    /* fonts */
+    --ff-heading: 'Nerko One', cursive; 
+    --ff-para: 'Montserrat', sans-serif;
+}
+
+
 /***** Resetting default styling *****/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: var(--ff-para)
+}
 /***** FOOTER *****/
 footer{
-    background-color: cadetblue; /* the color only for visibility */
+    background-color: var(--c-darkgreen);
     padding: 3rem 1rem 0.5rem 1rem;
 }
 .footer{
@@ -14,6 +43,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding-bottom: 2rem;
+    color: var(--c-white);
     
 }
 .dev-name{
@@ -25,12 +55,64 @@ footer{
     align-items: center;
     font-size: 1.5em;
 }
+.social-links > a {
+    color: var(--c-white);
+    text-decoration: none;
+}
 .copyright{
+    color: var(--c-white);
     text-align: center;
+    font-size: 0.9em;
 }
 /***** index.html *****/
 
+/* HERO section */
+.background{
+    height: 100vh;
+}
+.hero-title{
+    color: var(--c-yellow);
+    font-family: 'Nerko One', cursive; 
+    font-size: 6rem;
+    margin-bottom: 0;
+    text-shadow: 5px 7px 13px rgba(0, 0, 0, 0.132);
 
+}
+.hero-paragraph{
+    color: var(--c-red);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3rem;
+}
+@media only screen and (max-width: 700px){
+    .hero-title{
+        font-size: 3rem;
+    }
+    .hero-paragraph{
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* RULES section */
+.rules-title{
+    color: var(--c-blue);
+}
+.rules-small-heading{
+    color: var(--c-yellow);
+}
+.play-button{
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: var(--c-lightgreen);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color:var(--c-white);
+}
+.play-button:hover,
+.play-button:focus{
+    background-color: var(--c-darkgreen);
+    transition: 300ms ease-in;
+}
 
 /***** game.html *****/
 

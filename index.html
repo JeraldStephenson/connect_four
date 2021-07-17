@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="ourlogo.png">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Logo on the browser tab-->
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <!-- CSS framework -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Connect Four</title>
 </head>
+
 <body>
-    <div class="hero">
-        <h1 class="title">Connect Four</h1>
-        <p>The popular 2 players board game from 1974</p>
-    </div>
-    <div>
-        <h3>Rules of the game</h3>
-        <p>The players choose a color and then take turns dropping colored discs into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs.</p>
-        <p>Let's have some fun!</p>
-    </div>
-    <div>
-        <button class="play-btn" type="submit">Play</button>
+    <div class="background">
+        <!--  HERO  -->
+        <div class="hero flex flex-column center tc">
+            <div class="w-100">
+                <h1 class="hero-title ttu tracked">Connect Four</h1>
+            </div>
+            <div class="w-100">
+                <p class="hero-paragraph f3 ttu tracked-tight pa4">
+                    The popular 2 players board game from 1974
+                </p>
+            </div>
+        </div>
+
+        <!--  RULES section  -->
+        <div class="rules flex flex-column center tc">
+            <div class="pa4">
+                <h2 class="rules-title">Rules of the game</h2>
+            </div>
+            <div class="pa4 ph3 ph7-l">
+                <p class="tracked">
+                    The players choose a color and then take turns dropping colored
+                    discs into a seven-column, six-row vertically suspended grid. The
+                    pieces fall straight down, occupying the lowest available space
+                    within the column. The objective of the game is to be the first to
+                    form a horizontal, vertical, or diagonal line of four of one's own
+                    discs.
+                </p>
+            </div>
+            <div class="pa3">
+                <h2 class="rules-small-heading">Let's have some fun!</h4>
+            </div>
+            <div class="pa4">
+                <a class="f3 ttu tracked play-button" href="game.html">Play<i class="fas fa-play-circle"></i></a>
+            </div>
+        </div>
     </div>
 
     <!--   FOOTER   -->
@@ -36,7 +65,8 @@
                 <p class="dev-name">Benjamin Peto</p>
                 <div class="social-links">
                     <a href="https://github.com/benjaminpeto" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/benjaminpeto/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/benjaminpeto/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -44,10 +74,10 @@
     </footer>
 
     <!--    SCRIPTS    -->
-    <script src="app.js"></script>  
-    <!-- FontAwesome --> 
-    <script src="https://kit.fontawesome.com/9940cc5f5c.js" crossorigin="anonymous"></script> 
+    <script src="app.js"></script>
 
+    <!-- FontAwesome for github and linkedin logos -->
+    <script src="https://kit.fontawesome.com/9940cc5f5c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
