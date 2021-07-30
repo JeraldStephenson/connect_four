@@ -100,23 +100,85 @@ footer{
 .rules-small-heading{
     color: var(--c-yellow);
 }
-.play-button{
+.button{
+    cursor: pointer;
     padding: 10px 25px;
     border-radius: 25px;
     background-color: var(--c-lightgreen);
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: none;
     text-decoration: none;
     color:var(--c-white);
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.386);
 }
-.play-button:hover,
-.play-button:focus{
+.button:hover,
+.button:focus{
+    cursor: pointer;
     background-color: var(--c-darkgreen);
     transition: 300ms ease-in;
 }
 
 /***** game.html *****/
 
-
+.background{
+    padding-bottom: 2rem;
+    height: 120vh;
+}
+.wrapper{
+    height: 60%;
+}
+.hidden-row-wrapper{
+    min-width: 400px;
+    max-width: 700px;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: chartreuse;
+}
+.gameboard_container{
+    min-width: 400px;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.grid-square{
+    background-color: burlywood;
+    border: 1px solid black;
+}
+@media only screen and (max-width: 700px){
+    .game-title{
+        padding-bottom: 4rem;
+    }
+    .gameboard_container,
+    .hidden-row-wrapper{
+        max-height: 350px;
+        margin: 0 1rem;
+    }
+    .hidden-row-wrapper{
+        height: 3rem;
+    }
+}
+.reset{
+    background-color: var(--c-yellow);
+    color: black;
+}
+.reset:hover,
+.reset:focus{
+    background-color: #e6b237;
+    transition: 300ms ease-in;
+}
+.quit{
+    background-color: var(--c-red);
+    color: black;
+}
+.quit:hover,
+.quit:focus{
+    background-color: #dc6156;
+    transition: 300ms ease-in;
+}
+.fa-times-circle{
+    font-size: large;
+}
 
 /***** result.html *****/
 .result-container{

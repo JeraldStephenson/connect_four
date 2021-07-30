@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="ourlogo.png">
+    <link rel="icon" type="image/png" href="./img/logo.png">
     <title>Game Board</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Good luck!</h1> <!-- This we could change in JS for who's turn the current one for example-->
-    <div class="gameboard_container">
-        <div id="" class="grid-square row-hidden col-0"></div>
-        <div id="" class="grid-square row-hidden col-1"></div>
-        <div id="" class="grid-square row-hidden col-2"></div>
-        <div id="" class="grid-square row-hidden col-3"></div>
-        <div id="" class="grid-square row-hidden col-4"></div>
-        <div id="" class="grid-square row-hidden col-5"></div>
-        <div id="" class="grid-square row-hidden col-6"></div>
+    <div class="background bg-light-blue">
+        <div class="game-title tc pa3">
+        <h1 id="gamepage-heading">Good luck!</h1> <!-- This we could change in JS for who's turn the current one for example-->
+    </div>
+    <div class="wrapper">
+        <div class="hidden-row-wrapper center ">
+        <div id="" class="row-hidden col-0"></div>
+        <div id="" class="row-hidden col-1"></div>
+        <div id="" class="row-hidden col-2"></div>
+        <div id="" class="row-hidden col-3"></div>
+        <div id="" class="row-hidden col-4"></div>
+        <div id="" class="row-hidden col-5"></div>
+        <div id="" class="row-hidden col-6"></div>
+    </div>
+    <div class="gameboard_container ba h-75 center br4 mh4">
         <div id="r0c0" class="grid-square row-0 col-0"></div>
         <div id="r0c1" class="grid-square row-0 col-1"></div>
         <div id="r0c2" class="grid-square row-0 col-2"></div>
@@ -61,10 +68,18 @@
         <div id="r5c5" class="grid-square row-5 col-5"></div>
         <div id="r5c6" class="grid-square row-5 col-6"></div>
     </div>
-    <div class="button-group">
-        <button class="reset">Reset Game</button>
-        <button class="submit">Quit Game</button>
     </div>
+    
+    <div class="button-group flex flex-row justify-around pv3">
+        <div class="pa2">
+            <a class="f5 ttu tracked button reset" href="game.html"><i class="fas fa-undo"></i>Restart</a>
+        </div>
+        <div class="pa2">
+            <a class="f5 ttu tracked button quit" href="result.html"><i class="far fa-times-circle"></i>Quit</a>
+        </div>
+    </div>
+    </div>
+    
 
     <!--  FOOTER  -->
     <footer>
